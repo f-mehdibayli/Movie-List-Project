@@ -12,7 +12,7 @@ const Movies=({movies,addFavorites})=> {
                     <li className="movies__item" key={movie.imdbID}>
                         <MovieItem movie={movie} addFavorites={addFavorites}/>
                     </li>
-                )): null}
+                )): null }
             </ul>
         );
     

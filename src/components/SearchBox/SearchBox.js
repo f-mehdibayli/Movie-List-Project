@@ -15,9 +15,13 @@ const SearchBox=({addMovies})=>{
     }
 
     const searchBoxSubmitHandler = (event) => {
-        event.preventDefault();
+        event.preventDefault();        
         getMovies(search.searchLine).then(data=>{
-            addMovies(data.Search)
+            if(data.Search){
+                addMovies(data.Search)
+            }else{
+                addMovies([]);
+            }  
         })
     }     
 
