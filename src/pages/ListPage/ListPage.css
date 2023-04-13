@@ -1,0 +1,33 @@
+.list-page {
+    padding: 42px calc(50% - 300px);
+}
+
+.list-page__title {
+    font-size: 34px;
+    margin-bottom: 26px;
+}
+
+.list-page li {
+    display: flex;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.list-page li h1{
+    font-size: 25px;
+}
+
+.list-page div:first-child{
+    margin-right: 20px;
+}
+.list-page div:last-child{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+    
+}
+.list-page-img{
+    height: 80px;
+}
